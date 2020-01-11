@@ -1,0 +1,20 @@
+\chapter{Conclusion and Future Work}\label{Conclusion and Future Work}
+\section{Conclusion}
+%Being able to automatically describe the content of an
+%image using properly formed English sentences is a
+%very challenging task, but it could have great impact, for
+%instance by helping visually impaired people better understand
+%the content of images on the web. The description must capture not only the objects contained in
+%an image, but it also must express how these objects relate to
+%each other as well as their attributes and the activities they
+%are involved in. Moreover, the above semantic knowledge
+%has to be expressed in a natural language like English, which
+%means that a language model is needed in addition to visual
+%understanding.
+
+Combining recent advancement in Image Labeling and Automatic Machine Translation, an end-to-end hybrid neural network system is created. This system is capable to autonomously view an image and generate a reasonable description in natural language. Using Inception-ResNet provides better accuracy in identifying objects in image while LSTM will help us to relate that objects and create meaningful sentence.
+
+\section{Future work}
+
+In next phase, we will implement hybrid model as mentioned in our proposed plan. We will use ImageNet dataset for training newly added Inception-Resnet model. To complete training of our proposed approach, we will use MSCOCO dataset and then fine tune Inception-ResNet to achieve more accuracy. Once done with optimization, intuitive interface for user will be implemented, where user can easily upload images and generate captions. Multicore GPUs and distributed training will also be used for fast and efficient results.
+%In order to speedup process of training and execution, we are also planing to take help of multicore GPUs and distributed training.
